@@ -1,0 +1,24 @@
+{
+  "tags": [
+    {
+      "title": "ir al banco a cambiar dinero",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "pata negra",
+      "id": 5,
+      "completed": false
+    },
+    {
+      "title": "mi perro pascasio",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "title": "mi perro jaime",
+      "completed": false,
+      "id": 7
+    }
+  ]
+}
