@@ -1,23 +1,23 @@
 {
   "tags": [
     {
-      "title": "ir al banco a cambiar dinero",
-      "completed": true,
+      "title": "ir al banco a cambiar dinero rapido",
+      "completed": false,
       "id": 1
     },
     {
       "title": "ir a la post",
-      "completed": false,
+      "completed": true,
       "id": 5
     },
     {
       "title": "mi perro pascasio",
-      "completed": true,
+      "completed": false,
       "id": 6
     },
     {
-      "title": "mi perro jaime",
-      "completed": false,
+      "title": "mi perro jaime del piero",
+      "completed": true,
       "id": 7
     }
   ]

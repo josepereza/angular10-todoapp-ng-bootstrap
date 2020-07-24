@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { TodoService } from '../../services/todo.service';
-import { Router } from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 
 import { Todo } from 'src/app/models/Todo';
 
@@ -35,6 +35,7 @@ export class TodoItemComponent implements OnInit {
   }
   editar(id){
     console.log('este es el id ', id);
-    this.router.navigateByUrl(`edit/${id}`)
+    this.router.navigate(['edit', id])
       }
+ 
 }

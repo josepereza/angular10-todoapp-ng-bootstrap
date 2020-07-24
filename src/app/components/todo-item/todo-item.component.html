@@ -1,20 +1,14 @@
-<div class="container">
-  <div class="todo" *ngIf="!element.completed; else sicompletado" >
-    <p>
-      <input (change)="onToggle(element)" type="checkbox" [checked]="false"/>
-      <a  [routerLink]="['edit', element.id]" > {{ element.title }}</a>
-     
-      <button class="del" (click)="onDelete(element)">x</button>
-    </p>
+<div class="container linea">
+  <input (change)="onToggle(element)" type="checkbox" [checked]=element.completed />
+  <div class="todo" (click)=editar(element.id)>
+
+    <!-- <a  [routerLink]="['edit', element.id]" > {{ element.title }}</a> -->
+    <span [class.isComplete]="element.completed">
+      {{ element.title }}
+    </span>
+
+    <button class="del" (click)="onDelete(element)">x</button>
+
   </div>
-  <ng-template #sicompletado>
-    <div class="todo">
-      <p>
-      <input (change)="onToggle(element)" type="checkbox" [checked]="true"/>
-      <a style="text-decoration: line-through" [routerLink]="['edit', element.id]" > {{ element.title }}</a>
-     
-      <button class="del" (click)="onDelete(element)">x</button>
-      </p>
-    </div>
-  </ng-template>
+
 </div>
